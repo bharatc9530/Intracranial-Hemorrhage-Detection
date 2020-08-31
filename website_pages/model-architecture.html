@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Model Architeture</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+			<header id="header">
+				<nav id="nav">
+					<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="model-deployment.html">Model Deployment</a></li>
+							<li>
+								<a href="#">Concepts</a>
+								<ul>
+									<li><a href="model-architecture.html">Model Architeture</a></li>
+									<li>
+										<a href="#">Methodology</a>
+										<ul>
+											<li><a href="dataset.html">Dataset</a></li>
+											<li><a href="preprocessing.html">Preprocessing</a></li>										
+											<li><a href="results.html">Results</a></li>
+										</ul>
+									</li>
+									<li><a href="future-scope.html">Future Scope</a></li>
+								</ul>
+							</li>
+							<li><a href="about-us.html">About Us</a></li>
+					</ul>
+				</nav>
+			</header>
+			<!-- Main -->
+			<div id="main" class="wrapper style1">
+
+				<div class="container">
+					<header class="major">
+						<h2>Model Architeture</h2>
+
+					</header>
+					<center>
+						<span class="image"><img src="images/1.jpg" alt="" width="750" height="500" /></span>
+						<br /><br /><br/>
+						<p>
+						After the CNN model is trained, the extracted feature outputs received from CNNs are fed to the XGBoost and SVM model for classification as an input to the XGBoost and SVM classifier. Using this trained model training, validation, and testing datasets are predicted. Both predicted values of training and validation datasets are given as an input feature vector to fit the XGBoost and SVM model.
+					
+						</p>
+					</center>
+					
+				</div>
+				
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
