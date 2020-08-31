@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Pre-processing</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+			<header id="header">
+				<nav id="nav">
+					<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="model-deployment.html">Model Deployment</a></li>
+							<li>
+								<a href="#">Concepts</a>
+								<ul>
+									<li><a href="model-architecture.html">Model Architeture</a></li>
+									<li>
+										<a href="#">Methodology</a>
+										<ul>
+											<li><a href="dataset.html">Dataset</a></li>
+											<li><a href="preprocessing.html">Preprocessing</a></li>										
+											<li><a href="results.html">Results</a></li>
+										</ul>
+									</li>
+									<li><a href="future-scope.html">Future Scope</a></li>
+								</ul>
+							</li>
+							<li><a href="about-us.html">About Us</a></li>
+					</ul>
+				</nav>
+			</header>
+			<!-- Main -->
+			<div id="main" class="wrapper style1">
+				<div class="container">
+					<header class="major">
+						<h2>Pre-processing</h2>
+					</header>
+					<center>
+						<h3>Method-I</h3>
+						<br /><br /><br />
+						<span class="image"><img src="images/p1.jpg" alt="" /></span>
+						<br /><br /><br />
+						<p>
+							The threshold of BSD (brain, subdural, bone) windowing of single slice was taken and the CT scan was transformed into three windows: brain window (Level:40, Width: 80), subdural window (Level: 80, Width: 200) and bone window (Level: 600, Width:2000). The three windows were concatenated to form three channel images. This was followed by a resampling technique to get a little more spatial resolution from adjacent slices which kept the pixel spacing consistent, else it may be hard for the model to generalize. Finally, the image was cropped to focus on the informative part.
+						</p>
+						<br /><br /><br />
+						<h3>Method-II</h3>
+						<br /><br /><br />
+						<span class="image"><img src="images/p2.jpg" alt="" /></span>
+						<br /><br /><br />
+						<p>
+							The three adjacent slices of CT scan with brain window (Level:40, Width: 80) was concatenated to construct RGB (Red, Green, Blue) images. The CT scan metadata enabled the information of the spatially adjacent slices: R = St-1, G = St, B = St+1; where St is the slice of the CT scan. Finally, the image was cropped to focus on the informative part.
+						</p>
+					</center>
+				</div>
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
